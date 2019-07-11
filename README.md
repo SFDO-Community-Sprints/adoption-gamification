@@ -12,7 +12,7 @@ Change managers, cahnge agents, salesforce administrators
 
 ### Project Team
 
-* Team Leader:
+* Team Leader: Stephanie Zeitz
 * List of Contributors:
 
 ### Project Team Accomplishments
