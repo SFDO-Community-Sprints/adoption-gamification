@@ -14,9 +14,9 @@ Change managers, cahnge agents, salesforce administrators
 
 * Team Leader: Stephanie Zeitz
 * List of Contributors:
-  Awais Ahmad
-  Eric Shultz
-  Ryan Headley
+  - Awais Ahmad
+  - Eric Shultz
+  - Ryan Headley
 
 ### Project Team Accomplishments
 What did the Project Team accomplished during the Sprint?
