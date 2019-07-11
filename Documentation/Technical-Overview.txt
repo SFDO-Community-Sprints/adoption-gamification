@@ -1,0 +1,39 @@
+The proposed "flow" (for lack of better term) would be as follows:
+Game Administrator defines Rewards that can be earned. 
+Based on the target action being performed (e.g. Creating a Contact, Closing and Opportunity, Enrolling a Student in a class, etc) the Game admin would create a Process Builder, Flow, or Trigger to launch a platform event.  The platform event would be populated with the target user ($User.ID in Process Builder speak), as well as the reward ID to be triggered.
+
+A Trigger would run on that platform event and determine the actions to be take based on the reward, essentially creating a Reward Assignment and perfrom any necessary actions such as totalling points, assigning the reward to the targer user/contact, or assigning a fulfillment type of reward to a queue and optionally send notifications as appropriate.
+
+
+
+===OBJECT MODEL===
+
+Reward Condition
+The actual task being completed and the number of points required to  "complete" it.
+-- Name
+-- Point Value
+-- Description
+-- Owner/Queue
+
+
+Reward
+The actual reward
+-- Lookup (Master/Detail??) to Reward Condition
+-- Reward Type (Completion Badge, Rolling Total, Redeemable Artifact, Fufillment, etc)
+
+
+Reward Event
+Custom Platfrom event fired in one of numerous options
+-- Contact Id (Lookup) [If rewardee is not a user]
+-- User Id (Lookup)
+-- ExternalId (future state)
+-- Reward Condition Id 
+
+
+Reward Assignemt
+Ties the contact or user to a given reward
+-- Contact Id (Lookup)
+-- Reward Id (Lookup)
+-- Current Points (number)
+-- Status [New|In Progress|Completed]
+
