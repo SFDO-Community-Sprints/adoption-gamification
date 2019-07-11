@@ -1,0 +1,35 @@
+
+
+
+
+===OBJECT MODEL===
+
+Reward Condition
+The actual task being completed and the number of points required to  "complete" it.
+-- Name
+-- Point Value
+-- Description
+-- Owner/Queue
+
+
+Reward
+The actual reward
+-- Lookup (Master/Detail??) to Reward Condition
+-- Reward Type (Completion Badge, Rolling Total, Redeemable Artifact, Fufillment, etc)
+
+
+Reward Event
+Custom Platfrom event fired in one of numerous options
+-- Contact Id (Lookup) [If rewardee is not a user]
+-- User Id (Lookup)
+-- ExternalId (future state)
+-- Reward Condition Id 
+
+
+Reward Assignemt
+Ties the contact or user to a given reward
+-- Contact Id (Lookup)
+-- Reward Id (Lookup)
+-- Current Points (number)
+-- Status [New|In Progress|Completed]
+

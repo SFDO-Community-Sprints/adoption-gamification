@@ -1,0 +1,24 @@
+minimum_cumulusci_version: '2.5.4'
+project:
+    name: adoption-gamification
+    package:
+        name:  adoption-gamification
+        api_version: '46.0'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/adoption-gamification/tests
+            options:
+                outputdir: robot/adoption-gamification/results
+
+    robot_testdoc:
+        options:
+            path: robot/adoption-gamification/tests
+            output: robot/adoption-gamification/doc/adoption-gamification_tests.html
+
+flows:
+    config_qa:
+        1.1:
+            task: deploy_qa_config
