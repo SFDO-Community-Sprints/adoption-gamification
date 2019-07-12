@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>adoption-gamification</fullName>
     <types>
         <members>RewardAssignmentTrigger</members>
         <members>RewardEventTrigger</members>
         <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>PlusOne</members>
+        <name>CustomApplication</name>
     </types>
     <types>
         <members>Reward_Assignment__c.Current_Points__c</members>
@@ -13,20 +18,29 @@
         <members>Reward_Assignment__c.Reward_To__c</members>
         <members>Reward_Assignment__c.Reward__c</members>
         <members>Reward_Assignment__c.Status__c</members>
-        <members>Reward_Event__e.Reward_External_Id__c</members>
-        <members>Reward_Event__e.User_Id__c</members>
         <members>Reward__c.Description__c</members>
         <members>Reward__c.External_Id__c</members>
         <members>Reward__c.Points_Needed__c</members>
         <members>Reward__c.Points_to_Award__c</members>
         <members>Reward__c.Reward_Message__c</members>
+        <members>Reward_Event__e.Reward_External_Id__c</members>
+        <members>Reward_Event__e.User_Id__c</members>
         <name>CustomField</name>
     </types>
     <types>
         <members>Reward_Assignment__c</members>
-        <members>Reward_Event__e</members>
         <members>Reward__c</members>
+        <members>Reward_Event__e</members>
         <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Reward_Assignment__c</members>
+        <members>Reward__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Rewarder_UtilityBar</members>
+        <name>FlexiPage</name>
     </types>
     <types>
         <members>Contact</members>
@@ -41,44 +55,13 @@
     </types>
     <types>
         <members>Contact.All</members>
+        <members>Reward_Assignment__c.All</members>
+        <members>Reward__c.All</members>
         <name>ListView</name>
     </types>
     <types>
         <members>Admin</members>
         <name>Profile</name>
-    </types>
-    <types>
-        <members>Contact</members>
-        <members>Reward_Assignment__c</members>
-        <name>Workflow</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>WorkflowAlert</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>WorkflowFieldUpdate</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>WorkflowKnowledgePublish</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>WorkflowOutboundMessage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>WorkflowRule</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>WorkflowSend</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>WorkflowTask</name>
     </types>
     <version>46.0</version>
 </Package>
