@@ -34,7 +34,7 @@ If someone were to contribute to this project at the next Sprint what would you 
    - have the triggers/flows/etc leverage these settings rather than hard-coding
 * support nuermous types of rewards
    - badges
-   - physical rewards (need fullfillment)
+   - physical rewards (for fulfillment types, maybe assign the RewardAssignments to a Queue?)
    - point threshold rewards (rolling totals)
 * Reward groups
 
