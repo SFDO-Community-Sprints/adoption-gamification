@@ -4,7 +4,7 @@ project:
     package:
         name:  adoption-gamification
         api_version: '46.0'
-    source_format: sfdx
+    source_format: sfdx 
 
 tasks:
     robot:
