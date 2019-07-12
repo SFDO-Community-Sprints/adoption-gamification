@@ -2,7 +2,7 @@
 Adoption Gamification
 
 ### Project Description
-What if we could improve adoptoin through gamificaiton by allowing admins to pre-define tasks in their org for their users to complete and earn points/badges/other rewards for completion of said tasks.
+What if we could improve adoption through gamificaiton by allowing admins to pre-define tasks in their org for their users to complete and earn points/badges/other rewards for completion of said tasks.
 
 ### Demo
 -- TODO: Add video demo
